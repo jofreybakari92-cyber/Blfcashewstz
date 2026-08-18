@@ -4,6 +4,9 @@ export default defineConfig({
   tanstackStart: {
     server: { entry: "server" },
   },
+  nitro: {
+    preset: "vercel",
+  },
   vite: {
     resolve: {
       alias: {
@@ -16,7 +19,6 @@ export default defineConfig({
     build: {
       rollupOptions: {
         output: {
-          // Prevent duplicate chunk generation
           manualChunks: (id) => {
             if (id.includes("?worker")) {
               return "worker";
