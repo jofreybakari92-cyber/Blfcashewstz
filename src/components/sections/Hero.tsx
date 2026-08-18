@@ -183,7 +183,7 @@ export function Hero() {
             className="absolute -bottom-8 left-8 hidden md:flex items-center gap-0.5 rounded-[1.5rem] border border-white/40 bg-white/30 p-1.5 shadow-[0_8px_30px_rgb(0,0,0,0.12)] backdrop-blur-xl[...]"
             style={{ animationDelay: "0.3s" }}
           >
-            [{
+            {[{
               img: roastedImg, label: "Roasted", sub: "Lightly sea-salted"
             },{
               img: saltedImg, label: "Salted", sub: "Crunchy classic"
@@ -214,6 +214,7 @@ export function Hero() {
                 </div>
               </div>
             ))
+          }
           </div>
         </div>
       </div>
