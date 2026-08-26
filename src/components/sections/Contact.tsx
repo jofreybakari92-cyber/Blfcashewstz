@@ -1,4 +1,4 @@
-import { useForm, ValidationError } from "@formspree/react";
+﻿        import { useForm, ValidationError } from "@formspree/react";
 import { useI18n } from "../../lib/i18n";
 import { Mail, Phone, Send } from "lucide-react";
 import contactImg from "@/assets/contact blf.png";
@@ -57,7 +57,7 @@ export function Contact() {
               <h3 className="font-display text-3xl font-bold">
                 <span className="text-gradient-gold">{t("contact.title1")} </span>
                 {t("contact.title2")}
-                <span className="ml-2">→</span>
+                <span className="ml-2">â†’</span>
               </h3>
               <p className="text-foreground/70">
                 {t("contact.supportTitle")} {t("contact.supportDesc")}
@@ -71,7 +71,7 @@ export function Contact() {
                 { key: "contact.supportItem3" },
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-3 text-foreground/90">
-                  <span className="text-gold font-bold">✔</span>
+                  <span className="text-gold font-bold">âœ”</span>
                   <span>{t(item.key)}</span>
                 </div>
               ))}
@@ -188,6 +188,20 @@ export function Contact() {
               >
                 {state.submitting ? t("contact.submitting") : t("contact.submit")}
               </button>
+
+              {/* Arusha Map */}
+              <div className="rounded-2xl border border-gold/20 bg-foreground/5 p-1 shadow-inner">
+                <iframe
+                  src="https://www.openstreetmap.org/export/embed.html?bbox=36.5,-3.5,37.0,-3.2&layer=mapnik&marker=-3.3869,36.6830"
+                  width="100%"
+                  height="260"
+                  className="block w-full rounded-xl overflow-hidden"
+                  style={{ border: 0 }}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Arusha, Tanzania"
+                />
+              </div>
             </form>
           </div>
         </div>
@@ -195,3 +209,4 @@ export function Contact() {
     </section>
   );
 }
+
