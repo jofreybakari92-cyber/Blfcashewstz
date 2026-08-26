@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { CartButton } from "./cart/Cart";
 import { useCart } from "./cart/CartContext";
 import { useI18n, useTheme } from "../lib/i18n";
+import { Sun, Moon, Globe, Menu, X } from "lucide-react";
 import blfLogo from "@/assets/blf logo.jpg";
 
 const links = [
