@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Menu, X, Globe, Sun, Moon } from "lucide-react";
 import { CartButton } from "./cart/Cart";
 import { useCart } from "./cart/CartContext";
 import { useI18n, useTheme } from "../lib/i18n";

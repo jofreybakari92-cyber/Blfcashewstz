@@ -7,8 +7,27 @@ import saltedImg from "@/assets/cashews-salted.png";
 // Use bundler-resolved URL so runtime gets the hashed asset path (Vite/modern bundlers support `?url`)
 import videoUrl from "@/assets/DVGPs3qDGgk(MP4).mp4?url";
 import { waLink } from "../WhatsAppButton";
-import { ArrowRight, MessageCircle, Leaf } from "lucide-react";
-import { useI18n } from "../../lib/i18n";
+import { useI18n } from "@/lib/i18n";
+
+const ArrowRight = ({ className = "" }: { className?: string }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <path d="M5 12h14" />
+    <path d="m12 5 7 7-7 7" />
+  </svg>
+);
+
+const MessageCircle = ({ className = "" }: { className?: string }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z" />
+  </svg>
+);
+
+const Leaf = ({ className = "" }: { className?: string }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 3.5 21 4 21 4s.5 5.5-2.1 11.2A7 7 0 0 1 11 20Z" />
+    <path d="M11 20c0-4.5 1.5-8 6-11" />
+  </svg>
+);
 
 export function Hero() {
   const { t } = useI18n();
