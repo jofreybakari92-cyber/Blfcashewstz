@@ -89,7 +89,7 @@ export function Contact() {
             {/* Contact details cards */}
             <div className="grid grid-cols-1 gap-4 pt-6">
               <a
-                href="mailto:jofreylazaro047@gmail.com"
+                href="mailto:faustergilbert6@gmail.com"
                 className="flex items-center gap-4 rounded-2xl border border-gold/20 bg-foreground/5 p-5 transition-all hover:border-gold/60 hover:bg-foreground/10"
               >
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gold/20 text-gold">
@@ -97,7 +97,7 @@ export function Contact() {
                 </div>
                 <div>
                   <div className="font-semibold text-foreground">{t("contact.cardEmail")}</div>
-                  <div className="text-sm text-foreground/60">jofreylazaro047@gmail.com</div>
+                  <div className="text-sm text-foreground/60">faustergilbert6@gmail.com</div>
                 </div>
               </a>
 
